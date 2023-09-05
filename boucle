@@ -1,0 +1,16 @@
+#!/bin/bash
+
+chiffre=0
+
+while [ $chiffre -lt 10 ] || [ $chiffre -gt 20 ]
+do
+	echo 'veillez entrer un chiffre supérieur à 10 et inférieur à 20'
+	read chiffre
+done
+
+ls=`ls`
+
+for i in $ls
+do 
+	echo "i se situe à la variable : $i"
+done	

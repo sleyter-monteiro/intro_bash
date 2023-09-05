@@ -1,0 +1,9 @@
+#!/bin/sh
+
+echo "Quel est votre prénom ?"
+read prenom
+
+echo "Et ton nom de famille ?"
+read nom
+
+echo "Enchanté $prenom $nom"

@@ -1,0 +1,51 @@
+#!/bin/sh
+
+echo "Merci de taper le mot bonjour : bonjour"
+read texte
+
+if [ $texte = "bonjour" ]
+then
+	#Execution de la condition
+	echo "condition validé"
+
+elif [ $texte = "salut" ]
+then
+	#sinon si
+	echo "condition validé avec salut"
+
+elif [ -z $texte ]
+then
+	echo "Vous devez m'écrire"	
+
+else
+	#sinon
+	echo "condition non validée"
+fi
+
+echo "Merci de rentrer votre age"
+read age
+
+if [ -z $age ]
+then
+	echo "Vous n'avez pas saisie votre age"
+fi
+
+if [ $age -eq 12 ]
+then
+	echo "vous avez $age ans"
+fi
+
+if [ $age -ne 18 ]
+then
+	echo "Vous n'avez pas 18 ans"
+fi
+
+if [ $age -lt 18 ]
+then
+	echo "vous êtes mineur"
+fi
+
+if [ $age -gt 18 ]
+then
+	echo "vous êtes majeur"
+fi

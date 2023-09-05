@@ -1,0 +1,9 @@
+#!/bin/sh
+
+chiffre1=12
+chiffre2=289
+#chiffre3=$((chiffre1+chiffre2))
+
+chiffre3=`expr $chiffre1 + $chiffre2`
+
+echo $chiffre3

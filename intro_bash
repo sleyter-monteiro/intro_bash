@@ -1,0 +1,4 @@
+#!/bin/sh
+
+echo "Mon premier script kiddie :)"
+echo "Je ne sais toujours pas ce langage sert a quoi"
